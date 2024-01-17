@@ -1,0 +1,244 @@
+{
+    "status": true,
+    "code": 200,
+    "message": "Data fetched successfully.",
+    "data": {
+        "config": [
+            {
+                "config_title": "Nama Aplikasi",
+                "config_value": "WBS",
+                "config_group": "app"
+            },
+            {
+                "config_title": "Deskripsi Perusahaan",
+                "config_value": "Daya Group",
+                "config_group": "app"
+            },
+            {
+                "config_title": "No Telp",
+                "config_value": "041555",
+                "config_group": "app"
+            },
+            {
+                "config_title": "Address",
+                "config_value": "Jl. Raya Cibeureum No. 26\r\nBandung 40184 - Indonesia",
+                "config_group": "app"
+            },
+            {
+                "config_title": "Description",
+                "config_value": "PHA+U2lzdGVtIHBlbGFwb3JhbiBwZWxhbmdnYXJhbiB5YW5nIG1lbXVuZ2tpbmdrYW4gc2V0aWFwIG9yYW5nIHVudHVrIG1lbGFwb3JrYW4gYWRhbnlhIGR1Z2FhbiBtYXVwdW4gZmFrdGEgYXRhcyB0ZXJqYWRpbnlhIHRpbmRha2FuIEtlY3VyYW5nYW4gPHN0cm9uZz48ZW0+KEZyYXVkKTwvZW0+PC9zdHJvbmc+LCBwZWxhbmdnYXJhbiBsYWlubnlhIHRlcmhhZGFwIEtvZGUgRXRpayBkYW4vYXRhdSBQZXJhdHVyYW4gUGVydXNhaGFhbiwgc2VydGEgcGVueWltcGFuZ2FuIGF0dXJhbi9wcm9zZWR1ciB5YW5nIHRlcmphZGkgZGkgbGluZ2t1bmdhbiBQZXJ1c2FoYWFuLjwvcD4=",
+                "config_group": "deskripsi"
+            },
+            {
+                "config_title": "Statistik Pelaporan",
+                "config_value": "250",
+                "config_group": "statistik"
+            },
+            {
+                "config_title": "Link In",
+                "config_value": "20",
+                "config_group": "statistik"
+            },
+            {
+                "config_title": "Daya Group",
+                "config_value": "50",
+                "config_group": "statistik"
+            }
+        ],
+        "features": [
+            {
+                "features_id": "q8xtqdjrpl37pccy",
+                "features_title": "WHO ?",
+                "features_description": "U2lhcGEgeWFuZyBtZWxha3VrYW4gcGVsYW5nZ2FyYW4/",
+                "features_icon": "fa-solid fa-users",
+                "features_sorting": "1",
+                "features_created_at": "2023-08-31 08:35:53",
+                "features_updated_at": "2023-12-21 01:22:27",
+                "features_deleted_at": null
+            },
+            {
+                "features_id": "hsplck3cfwl8pdmn",
+                "features_title": "WHERE ?",
+                "features_description": "RGkgbWFuYSBsb2thc2kgcGVsYW5nZ2FyYW4gZGlsYWt1a2FuPw==",
+                "features_icon": "fa-solid fa-location-dot",
+                "features_sorting": "2",
+                "features_created_at": "2023-08-31 12:51:40",
+                "features_updated_at": "2023-12-21 01:22:27",
+                "features_deleted_at": null
+            },
+            {
+                "features_id": "mfhiabxohhkqd3kj",
+                "features_title": "WHEN ?",
+                "features_description": "S2FwYW4gd2FrdHUvcGVyaW9kZSBwZWxhbmdnYXJhbiBkaWxha3VrYW4/",
+                "features_icon": "fa-solid fa-clock",
+                "features_sorting": "3",
+                "features_created_at": "2023-08-31 12:51:59",
+                "features_updated_at": "2023-12-21 01:22:27",
+                "features_deleted_at": null
+            }
+        ],
+        "choose": [
+            {
+                "choose_id": "7z7l3vj6unb8ifkr",
+                "choose_title": "Apakah setiap laporan yang masuk akan ditindaklanjuti?",
+                "choose_description": "PHA+VGluZGFrIGxhbmp1dCBhdGFzIHNldGlhcCBsYXBvcmFuIHlhbmcgbWFzdWsgbWVuZ2FjdSBwYWRhIGtlYmlqYWthbiBkYW4gcHJvc2VkdXIgeWFuZyBiZXJsYWt1IGRpIERheWEgR3JvdXAuPC9wPg==",
+                "choose_active": "1",
+                "choose_sorting": "3",
+                "choose_created_at": "2023-10-13 04:17:22",
+                "choose_updated_at": "2023-12-13 02:53:18",
+                "choose_deleted_at": null
+            },
+            {
+                "choose_id": "fooqma11cvqqfjzx",
+                "choose_title": "Apakah saya diperbolehkan untuk tidak mengungkapkan identitas pribadi saya?",
+                "choose_description": "PHVsPjxsaT48c3BhbiBzdHlsZT0iY29sb3I6IHJnYigwLCAwLCAwKTsgYmFja2dyb3VuZC1jb2xvcjogdHJhbnNwYXJlbnQ7Ij5LYW1pIG1lbnlhcmFua2FuIEFuZGEgbWVtYmVyaWthbiBpZGVudGlmaWthc2kgcHJpYmFkaSBsZW5na2FwIHlhbmcgbWVuY2FrdXAgbmFtYSwgPC9zcGFuPjxlbSBzdHlsZT0iY29sb3I6IHJnYigwLCAwLCAwKTsgYmFja2dyb3VuZC1jb2xvcjogdHJhbnNwYXJlbnQ7Ij5lLW1haWw8L2VtPjxzcGFuIHN0eWxlPSJjb2xvcjogcmdiKDAsIDAsIDApOyBiYWNrZ3JvdW5kLWNvbG9yOiB0cmFuc3BhcmVudDsiPiwgbm9tb3IgdGVsZXBvbiwgZGFuIHN0YXR1cyBwZWxhcG9yICg8L3NwYW4+PGVtIHN0eWxlPSJjb2xvcjogcmdiKDAsIDAsIDApOyBiYWNrZ3JvdW5kLWNvbG9yOiB0cmFuc3BhcmVudDsiPmludGVybmFsPC9lbT48c3BhbiBzdHlsZT0iY29sb3I6IHJnYigwLCAwLCAwKTsgYmFja2dyb3VuZC1jb2xvcjogdHJhbnNwYXJlbnQ7Ij4vPC9zcGFuPjxlbSBzdHlsZT0iY29sb3I6IHJnYigwLCAwLCAwKTsgYmFja2dyb3VuZC1jb2xvcjogdHJhbnNwYXJlbnQ7Ij5leHRlcm5hbDwvZW0+PHNwYW4gc3R5bGU9ImNvbG9yOiByZ2IoMCwgMCwgMCk7IGJhY2tncm91bmQtY29sb3I6IHRyYW5zcGFyZW50OyI+KS48L3NwYW4+PC9saT48bGk+PHNwYW4gc3R5bGU9ImJhY2tncm91bmQtY29sb3I6IHRyYW5zcGFyZW50OyI+TmFtdW4gS2FtaSBtZW1iZXJpIEFuZGEgcGlsaWhhbiAob3BzaSkgdW50dWsgbWVsYXBvcmthbiBzZWNhcmEgYW5vbmltLCBrZWN1YWxpIGVtYWlsIHNlYmFnYWkgcGVyc3lhcmF0YW4gbXV0bGFrIGRhbGFtIHBlbWJ1YXRhbiBha3VuIGRpIHBvcnRhbCBXQlMgRGF5YSBHcm91cC48L3NwYW4+PC9saT48L3VsPjxwPjxzcGFuIHN0eWxlPSJjb2xvcjogcmdiKDAsIDAsIDApOyBiYWNrZ3JvdW5kLWNvbG9yOiB0cmFuc3BhcmVudDsiPkRhdGEgaWRlbnRpdGFzIHlhbmcgZGlzYW1wYWlrYW4gZGltYWtzdWRrYW4gc2VtYXRhLW1hdGEgdW50dWsga2VwZXJsdWFuIGtvbXVuaWthc2kgYXRhcyBwZW5kYWxhbWFuIGxhcG9yYW4gKGppa2EgZGlwZXJsdWthbikuPC9zcGFuPjwvcD4=",
+                "choose_active": "1",
+                "choose_sorting": "4",
+                "choose_created_at": "2023-08-31 06:40:50",
+                "choose_updated_at": "2023-12-13 02:53:18",
+                "choose_deleted_at": null
+            },
+            {
+                "choose_id": "kweva6iwu2k3dvfi",
+                "choose_title": "Bagaimana jika tidak memiliki bukti/bukti yang dimiliki tidak lengkap?",
+                "choose_description": "QnVrdGkgcGVuZHVrdW5nIGJlcnNpZmF0IG1hbmRhdG9yeSBzZWhpbmdnYSBwYXN0aWthbiBBbmRhIG1lbWlsaWtpIHNldGlkYWtueWEgc2F0dSBidWt0aSB5YW5nIGRhcGF0IG1lbmR1a3VuZyBsYXBvcmFuIEFuZGEu",
+                "choose_active": "1",
+                "choose_sorting": "5",
+                "choose_created_at": "2023-10-13 04:16:36",
+                "choose_updated_at": "2023-12-13 02:53:18",
+                "choose_deleted_at": null
+            }
+        ],
+        "mekanisme": [
+            {
+                "mekanisme_id": "h0uu7b5vuhlvgmnc",
+                "mekanisme_title": "RECEIVING",
+                "mekanisme_execute_by": "System",
+                "mekanisme_description": "PHA+UGVuZXJpbWFhbiBMYXBvcmFuIChQZWxhbmdnYXJhbiBkYW4gS2V0aWRha3BhdHVoYW4pPC9wPg==",
+                "mekanisme_active": "1",
+                "mekanisme_sorting": "1",
+                "mekanisme_icon": "fa fa-location",
+                "mekanisme_created_at": "2023-12-12 02:56:53",
+                "mekanisme_updated_at": "2024-01-05 03:08:35",
+                "mekanisme_deleted_at": null
+            },
+            {
+                "mekanisme_id": "5gtixnyxwn3rkgnk",
+                "mekanisme_title": "PROCESSING",
+                "mekanisme_execute_by": "WBS Officer + PIC Anti-Fraud",
+                "mekanisme_description": "PHA+UmV2aWV3IGRhbiBBbmFsaXNhIFBlbGFwb3JhbiAoNVdIMiAmIEJ1a3RpKTwvcD4=",
+                "mekanisme_active": "1",
+                "mekanisme_sorting": "2",
+                "mekanisme_icon": "fa fa-clock",
+                "mekanisme_created_at": "2023-12-12 02:57:12",
+                "mekanisme_updated_at": "2024-01-05 03:10:13",
+                "mekanisme_deleted_at": null
+            },
+            {
+                "mekanisme_id": "croryldlil6hp3px",
+                "mekanisme_title": "FOLLOW UP",
+                "mekanisme_execute_by": "CEO &amp; Komite Anti-Fraud",
+                "mekanisme_description": "PHA+SW52ZXN0aWdhc2kgUGVsYXBvcmFuIChUaW0gSW5kZXBlbmRlbik8L3A+",
+                "mekanisme_active": "1",
+                "mekanisme_sorting": "3",
+                "mekanisme_icon": "fa fa-clock",
+                "mekanisme_created_at": "2023-12-12 02:57:41",
+                "mekanisme_updated_at": "2024-01-05 03:10:43",
+                "mekanisme_deleted_at": null
+            },
+            {
+                "mekanisme_id": "iwy9onbfpwsljar1",
+                "mekanisme_title": "PROTECTION",
+                "mekanisme_execute_by": "CEO &amp; Komite Anti-Fraud",
+                "mekanisme_description": "PHA+UGVueWVsZXNhaWFuIGF0YXMgSGFzaWwgSW52ZXN0aWdhc2kgKFNhbmtzaSBkYW4vYXRhdSBQcmV2ZW50aXZlIEFjdGlvbik8L3A+",
+                "mekanisme_active": "1",
+                "mekanisme_sorting": "4",
+                "mekanisme_icon": "fa fa-clock",
+                "mekanisme_created_at": "2023-12-12 02:57:57",
+                "mekanisme_updated_at": "2024-01-05 03:21:00",
+                "mekanisme_deleted_at": null
+            }
+        ],
+        "config2": {
+            "app": [
+                {
+                    "config_title": "Nama Aplikasi",
+                    "config_value": "WBS",
+                    "config_group": "app"
+                },
+                {
+                    "config_title": "Deskripsi Perusahaan",
+                    "config_value": "Daya Group",
+                    "config_group": "app"
+                },
+                {
+                    "config_title": "No Telp",
+                    "config_value": "041555",
+                    "config_group": "app"
+                },
+                {
+                    "config_title": "Address",
+                    "config_value": "Jl. Raya Cibeureum No. 26\r\nBandung 40184 - Indonesia",
+                    "config_group": "app"
+                }
+            ],
+            "deskripsi": [
+                {
+                    "config_title": "Description",
+                    "config_value": "PHA+U2lzdGVtIHBlbGFwb3JhbiBwZWxhbmdnYXJhbiB5YW5nIG1lbXVuZ2tpbmdrYW4gc2V0aWFwIG9yYW5nIHVudHVrIG1lbGFwb3JrYW4gYWRhbnlhIGR1Z2FhbiBtYXVwdW4gZmFrdGEgYXRhcyB0ZXJqYWRpbnlhIHRpbmRha2FuIEtlY3VyYW5nYW4gPHN0cm9uZz48ZW0+KEZyYXVkKTwvZW0+PC9zdHJvbmc+LCBwZWxhbmdnYXJhbiBsYWlubnlhIHRlcmhhZGFwIEtvZGUgRXRpayBkYW4vYXRhdSBQZXJhdHVyYW4gUGVydXNhaGFhbiwgc2VydGEgcGVueWltcGFuZ2FuIGF0dXJhbi9wcm9zZWR1ciB5YW5nIHRlcmphZGkgZGkgbGluZ2t1bmdhbiBQZXJ1c2FoYWFuLjwvcD4=",
+                    "config_group": "deskripsi"
+                }
+            ],
+            "choose": [
+                {
+                    "config_title": "Image choose",
+                    "config_value": "https://wbs-dayagroup.skwn.dev/admin//api/file/uploads-1702459089_cbafb2ae427c072d89b8.png",
+                    "config_group": "choose"
+                }
+            ],
+            "google_recaptcha": [
+                {
+                    "config_title": "Secret Key",
+                    "config_value": "6Ldhz94nAAAAAARVlHltHjRHf7YrhFOFeYjd9i71",
+                    "config_group": "google_recaptcha"
+                },
+                {
+                    "config_title": "Site Key",
+                    "config_value": "6Ldhz94nAAAAAEPm1C-FTUusZxGvBka6A0OjInDz",
+                    "config_group": "google_recaptcha"
+                }
+            ],
+            "media": [
+                {
+                    "config_title": "Linked In",
+                    "config_value": "https://www.linkedin.com/company/sekawanmedia",
+                    "config_group": "media"
+                },
+                {
+                    "config_title": "Youtube",
+                    "config_value": "https://www.youtube.com/watch?v=vy-8KgSdwNM",
+                    "config_group": "media"
+                },
+                {
+                    "config_title": "Instagram",
+                    "config_value": "https://www.instagram.com/sekawanmedia/?hl=id",
+                    "config_group": "media"
+                }
+            ],
+            "mekanisme": [
+                {
+                    "config_title": "Image Mekanisme Pelaporan",
+                    "config_value": "https://wbs-dayagroup.skwn.dev/admin//api/file/uploads-1702459103_bba1082db6ca6f7b0cac.png",
+                    "config_group": "mekanisme"
+                }
+            ],
+            "prosedur": [
+                {
+                    "config_title": "Tata Cara Membuat Pengaduan Melalui WBS",
+                    "config_value": "https://www.youtube.com/embed/Fzv-rgwcFKk?si=FAJAe3oEmL98OpHw",
+                    "config_group": "prosedur"
+                }
+            ]
+        }
+    }
+}
