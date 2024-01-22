@@ -21,7 +21,7 @@ function Movement(){
     return(
         <>
             <div className='w-full h-[50vh] mt-20 bg-green'>
-                <div className='p-6 md:px-3'>
+                <div className='mx-auto max-w-[960px] px-6 md:px-3'>
                     <div className="text-center mx-auto">
                         <h1 className="md:text-h3 text-h4  text-white py-14">We Are Startup Company. Experts In Field <br/> Organic Startup movement </h1>
                     </div>

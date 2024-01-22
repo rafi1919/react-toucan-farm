@@ -16,7 +16,7 @@ function Choose(){
         <>
              <div className="w-full md:h-[100vh] h-[100%] bg-white">
                 <div className="mx-auto max-w-[960px] p-6  md:px-3">
-                    <div className="grid md:grid-cols-2 pt-20 gap-x-3">
+                    <div className="grid md:grid-cols-2 pt-20 gap-x-5">
                         <div className="mt-7">
                             <img src="https://images.pexels.com/photos/1132047/pexels-photo-1132047.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" className=" object-cover h-full"/>
                         </div>

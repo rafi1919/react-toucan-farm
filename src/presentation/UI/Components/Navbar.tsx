@@ -1,79 +1,99 @@
-import { Link } from "react-router-dom";
+import React, { useState } from 'react';
+import { Link } from 'react-router-dom';
 
 interface Page {
-  list:string;
-  link:any
+  list: string;
+  link: string;
 }
 
-const NavList: Page[] =[
+const NavList: Page[] = [
   {
-    list:'User',
-    link:'/'
+    list: 'User',
+    link: '/user',
   },
   {
-    list:'Shop',
-    link:'/'
+    list: 'Shop',
+    link: '/shop',
   },
   {
-    list:'Community',
-    link:'/'
+    list: 'Community',
+    link: '/community',
   },
+];
 
-]
+const Navbar = () => {
+  const [isMobileMenuOpen, setMobileMenuOpen] = useState(false);
 
-const Navbar =()=> {
+  const toggleMobileMenu = () => {
+    setMobileMenuOpen(!isMobileMenuOpen);
+  };
+
   return (
     <>
-      <nav className="w-full border-gray-200 bg-pink">
-          <div className="flex max-w-[960px] flex-wrap items-center justify-between mx-auto p-4">
+      <nav className="w-full fixed border-gray-200 bg-pink z-10">
+        <div className="flex max-w-[960px] flex-wrap items-center justify-between mx-auto p-4">
           <a href="https://flowbite.com/" className="flex items-center">
-              {/* <img src="https://flowbite.com/docs/images/logo.svg" className="h-8 mr-3" alt="Flowbite Logo" /> */}
-              <span className="self-center text-2xl font-semibold whitespace-nowrap ">Toucan Farm</span>
+             <svg className='w-10 h-10' viewBox="0 0 66 56" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M16.6336 0.683606C12.9729 0.723664 9.60486 2.05489 7.30566 4.34398C5.41799 6.22345 3.71105 9.25696 2.61662 12.744C1.52232 16.2309 1.0598 20.1716 1.97131 23.8018L1.97213 23.8056L1.97322 23.8094C4.25984 32.6804 0.75 42.6116 0.75 52.4958V53.6326L1.8834 53.722C8.37863 54.2351 16.8388 55.5065 23.1999 55.2937C26.3805 55.1875 29.0772 54.7943 30.9091 53.351C31.8248 52.6291 32.4731 51.5558 32.5934 50.3278C32.711 49.1325 32.3866 47.8497 31.7057 46.4341L27.7928 34.9981C28.0094 32.6495 28.3089 30.3121 28.6125 27.9621C27.3622 28.4238 26.3388 28.9274 25.6092 29.4745L25.076 29.8743L24.4498 29.646C22.7258 29.0175 21.6006 27.5728 21.0184 25.8999C20.5079 24.4329 20.3276 22.7537 20.3031 20.9397C18.5094 20.313 17.0757 19.6542 15.9721 18.8349C13.1284 28.2562 7.71773 34.9176 13.0972 43.3932C20.5558 50.4186 24.1635 48.4373 29.2385 46.8265L29.4135 47.3375L29.4481 47.4081C30.0395 48.6095 30.2022 49.4985 30.1443 50.0877C30.0863 50.677 29.8763 51.0319 29.3855 51.4186C28.4042 52.1918 26.0933 52.7352 23.1175 52.8346C17.4942 53.0226 9.68703 51.9422 3.23691 51.3782C3.50447 42.4155 6.79324 32.6628 4.35801 23.2032L4.35609 23.1959C3.60045 20.1781 3.97273 16.6416 4.96449 13.4813C5.95734 10.319 7.59018 7.53404 9.04186 6.08892C10.877 4.26167 13.7597 3.13279 16.9558 3.16245C17.0589 3.16341 17.1623 3.16546 17.2662 3.16888C18.9827 3.22493 25.2045 4.16392 27.1419 6.08782C27.9568 5.62927 28.1613 5.6413 28.6455 5.58976C25.1886 2.34405 21.1528 0.830305 17.3693 0.693586C17.1242 0.684694 16.8789 0.681595 16.6337 0.68429L16.6336 0.683606ZM22.6734 7.03378C20.9203 7.01191 19.6984 7.45487 18.8084 8.11208C17.2256 9.28075 16.4478 11.4193 16.0666 13.7282C15.8684 14.9305 16.0641 15.578 16.865 16.371C17.6136 17.112 19.0354 17.8899 21.1966 18.6453C24.1599 15.01 25.6844 11.3903 26.7149 7.7048C25.119 7.25089 23.7882 7.04773 22.6735 7.03378H22.6734ZM32.3073 7.87597C31.1952 7.88198 30.1526 7.93927 29.171 8.0332C28.2228 11.516 26.8202 15.0856 24.2967 18.6285C24.6045 18.5984 24.9447 18.5745 25.2626 18.5462C36.3507 17.4027 45.9834 17.1208 55.5184 17.9337C55.4425 17.8033 55.3724 17.6696 55.3082 17.5331C54.8374 16.5271 54.8023 15.4376 55.1414 14.5387C55.4058 13.8368 55.8386 13.2623 56.3718 12.804C54.9196 12.1864 53.3579 11.6104 51.7283 11.09C45.8184 9.20159 39.0107 8.03073 33.4427 7.88773C33.0562 7.87775 32.6781 7.87405 32.3073 7.87597ZM21.0963 9.1089C22.4556 9.1089 23.5573 10.2208 23.5573 11.5925C23.5573 12.9642 22.4556 14.0763 21.0963 14.0763C19.7374 14.0763 18.6354 12.9642 18.6354 11.5927C18.6354 10.2211 19.7374 9.10917 21.0963 9.10917V9.1089ZM59.105 14.0852C58.2933 14.3764 57.6257 14.9252 57.4441 15.4064C57.3301 15.7089 57.3078 16.0002 57.5371 16.4901C57.7562 16.9587 58.2622 17.5948 59.2094 18.3038C59.4443 18.3307 59.6793 18.3576 59.9144 18.3861C61.2204 18.5072 62.4423 18.6408 63.4488 18.804C64.0255 18.8973 64.4969 18.9978 64.9628 19.104C65.0572 19.1193 65.1515 19.1333 65.2463 19.1488C64.619 18.0066 63.4521 16.8082 61.7512 15.6495C60.9623 15.1122 60.0736 14.5889 59.1047 14.0849L59.105 14.0852ZM45.2927 20.2699C44.6351 20.268 43.9736 20.2686 43.31 20.2713C36.9961 20.298 30.5194 20.5505 25.413 21.0045C24.54 21.0948 23.6735 21.1817 22.7803 21.2827C22.8275 22.7867 22.9999 24.106 23.3426 25.0904C23.6817 26.0641 24.1189 26.679 24.7678 27.0701C28.7432 24.5025 35.6397 23.4101 43.2221 22.5903C49.4596 21.9163 56.0832 21.5216 61.6657 21.0727C61.043 20.9866 60.4223 20.9245 59.8013 20.8483C57.3367 20.6172 54.3517 20.4468 51.0516 20.3561C49.1325 20.3041 47.2128 20.2755 45.293 20.2702L45.2927 20.2699Z" fill="#348452"/>
+            </svg>
+            <span className="self-center text-2xl font-semibold whitespace-nowrap ml-2">
+              Toucan Farm
+            </span>
           </a>
-          <div className="flex md:order-2">
-            <button type="button" data-collapse-toggle="navbar-search" aria-controls="navbar-search" aria-expanded="false" className="md:hidden text-gray-500 dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-700 focus:outline-none focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-700 rounded-lg text-sm p-2.5 mr-1" >
-              <svg className="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 20 20">
-                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m19 19-4-4m0-7A7 7 0 1 1 1 8a7 7 0 0 1 14 0Z"/>
-              </svg>
-              <span className="sr-only">Search</span>
-            </button>
-            <div className="relative hidden md:block">
-              <div className="absolute inset-y-0 left-0 flex items-center pl-3 pointer-events-none">
-                <svg className="w-4 h-4 text-gray-500 dark:text-gray-400" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 20 20">
-                  <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m19 19-4-4m0-7A7 7 0 1 1 1 8a7 7 0 0 1 14 0Z"/>
-                </svg>
-                <span className="sr-only">Search icon</span>
-              </div>
-              <input type="text" id="search-navbar" className="block w-full p-2 pl-10 text-sm text-gray-900 border border-gray-300 rounded-lg " placeholder="Search..." />
-            </div>
-            <button data-collapse-toggle="navbar-search" type="button" className="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 " aria-controls="navbar-search" aria-expanded="false">
-                <span className="sr-only">Open main menu</span>
-                <svg className="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 17 14">
-                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 1h15M1 7h15M1 13h15"/>
-                </svg>
-            </button>
-          </div>
-            <div className="items-center justify-between hidden w-full md:flex md:w-auto md:order-1" id="navbar-search">
-              <div className="relative mt-3 md:hidden">
-                <div className="absolute inset-y-0 left-0 flex items-center pl-3 pointer-events-none">
-                  <svg className="w-4 h-4 text-gray-500 dark:text-gray-400" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 20 20">
-                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m19 19-4-4m0-7A7 7 0 1 1 1 8a7 7 0 0 1 14 0Z"/>
-                  </svg>
-                </div>
-                <input type="text" id="search-navbar" className="block w-full p-2 pl-10 text-sm text-gray-900 border border-gray-300 rounded-lg focus:ring-blue-500 " placeholder="Search..."/>
-              </div>
-              <ul className="flex flex-col p-4 md:p-0 mt-4 font-medium borderrounded-lg md:flex-row md:space-x-8 md:mt-0 md:border-0">
+
+          {/* Mobile Menu Button */}
+          <button
+            type="button"
+            className="md:hidden p-2"
+            onClick={toggleMobileMenu}
+          >
+          <svg className='w-10 h-10' viewBox="0 0 122 120" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <ellipse cx="60.6818" cy="60" rx="60.6818" ry="60" fill="#348452"/>
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M77.6693 47.4999C77.6693 51.9202 75.9133 56.1594 72.7877 59.285C69.6621 62.4106 65.4229 64.1666 61.0026 64.1666C56.5823 64.1666 52.3431 62.4106 49.2175 59.285C46.0919 56.1594 44.3359 51.9202 44.3359 47.4999C44.3359 43.0796 46.0919 38.8404 49.2175 35.7148C52.3431 32.5892 56.5823 30.8333 61.0026 30.8333C65.4229 30.8333 69.6621 32.5892 72.7877 35.7148C75.9133 38.8404 77.6693 43.0796 77.6693 47.4999ZM69.3359 47.4999C69.3359 49.7101 68.458 51.8297 66.8952 53.3925C65.3324 54.9553 63.2127 55.8333 61.0026 55.8333C58.7925 55.8333 56.6729 54.9553 55.1101 53.3925C53.5472 51.8297 52.6693 49.7101 52.6693 47.4999C52.6693 45.2898 53.5472 43.1702 55.1101 41.6074C56.6729 40.0446 58.7925 39.1666 61.0026 39.1666C63.2127 39.1666 65.3324 40.0446 66.8952 41.6074C68.458 43.1702 69.3359 45.2898 69.3359 47.4999Z" fill="white"/>
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M61.0013 14.1666C35.6888 14.1666 15.168 34.6875 15.168 60C15.168 85.3124 35.6888 105.833 61.0013 105.833C86.3138 105.833 106.835 85.3124 106.835 60C106.835 34.6875 86.3138 14.1666 61.0013 14.1666ZM23.5013 60C23.5013 68.7083 26.4721 76.7249 31.4513 83.0916C34.9481 78.4995 39.4592 74.7781 44.6323 72.2179C49.8053 69.6578 55.5002 68.3283 61.2721 68.3333C66.9693 68.3279 72.5926 69.623 77.7135 72.1199C82.8344 74.6168 87.3178 78.2496 90.8221 82.7416C94.4323 78.0066 96.8631 72.48 97.9133 66.6191C98.9636 60.7581 98.6031 54.7313 96.8617 49.0374C95.1203 43.3434 92.048 38.146 87.8992 33.8751C83.7503 29.6042 78.644 26.3827 73.0029 24.4771C67.3618 22.5714 61.348 22.0365 55.459 22.9165C49.5701 23.7965 43.9754 26.0662 39.1378 29.5377C34.3002 33.0092 30.3588 37.5827 27.6398 42.8799C24.9207 48.1771 23.5021 54.0457 23.5013 60ZM61.0013 97.4999C52.3928 97.5129 44.0441 94.5514 37.368 89.1166C40.0552 85.2697 43.6319 82.1288 47.7938 79.9611C51.9557 77.7935 56.5796 76.6633 61.2721 76.6666C65.9061 76.6629 70.4742 77.7648 74.5968 79.8809C78.7195 81.9969 82.2778 85.066 84.9763 88.8333C78.2484 94.4445 69.7621 97.5122 61.0013 97.4999Z" fill="white"/>
+          </svg>
+            <span className="sr-only">Toggle mobile menu</span>
+          </button>
+
+          {/* Desktop Menu */}
+          <div className="hidden md:flex md:order-2">
+          <ul className="flex flex-col p-4 md:p-0 mt-4 font-medium borderrounded-lg md:flex-row md:space-x-8 md:mt-0 md:border-0">
                 {NavList.map((item, index)=> (
                 <li key={index}>
                   <Link to={item.link} className="block py-2 pl-3 pr-4 text-green">{item.list}</Link>
                 </li>
                 ))}
               
+              </ul>   
+            <svg className='w-10 h-10' viewBox="0 0 122 120" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <ellipse cx="60.6818" cy="60" rx="60.6818" ry="60" fill="#348452"/>
+              <path fill-rule="evenodd" clip-rule="evenodd" d="M77.6693 47.4999C77.6693 51.9202 75.9133 56.1594 72.7877 59.285C69.6621 62.4106 65.4229 64.1666 61.0026 64.1666C56.5823 64.1666 52.3431 62.4106 49.2175 59.285C46.0919 56.1594 44.3359 51.9202 44.3359 47.4999C44.3359 43.0796 46.0919 38.8404 49.2175 35.7148C52.3431 32.5892 56.5823 30.8333 61.0026 30.8333C65.4229 30.8333 69.6621 32.5892 72.7877 35.7148C75.9133 38.8404 77.6693 43.0796 77.6693 47.4999ZM69.3359 47.4999C69.3359 49.7101 68.458 51.8297 66.8952 53.3925C65.3324 54.9553 63.2127 55.8333 61.0026 55.8333C58.7925 55.8333 56.6729 54.9553 55.1101 53.3925C53.5472 51.8297 52.6693 49.7101 52.6693 47.4999C52.6693 45.2898 53.5472 43.1702 55.1101 41.6074C56.6729 40.0446 58.7925 39.1666 61.0026 39.1666C63.2127 39.1666 65.3324 40.0446 66.8952 41.6074C68.458 43.1702 69.3359 45.2898 69.3359 47.4999Z" fill="white"/>
+              <path fill-rule="evenodd" clip-rule="evenodd" d="M61.0013 14.1666C35.6888 14.1666 15.168 34.6875 15.168 60C15.168 85.3124 35.6888 105.833 61.0013 105.833C86.3138 105.833 106.835 85.3124 106.835 60C106.835 34.6875 86.3138 14.1666 61.0013 14.1666ZM23.5013 60C23.5013 68.7083 26.4721 76.7249 31.4513 83.0916C34.9481 78.4995 39.4592 74.7781 44.6323 72.2179C49.8053 69.6578 55.5002 68.3283 61.2721 68.3333C66.9693 68.3279 72.5926 69.623 77.7135 72.1199C82.8344 74.6168 87.3178 78.2496 90.8221 82.7416C94.4323 78.0066 96.8631 72.48 97.9133 66.6191C98.9636 60.7581 98.6031 54.7313 96.8617 49.0374C95.1203 43.3434 92.048 38.146 87.8992 33.8751C83.7503 29.6042 78.644 26.3827 73.0029 24.4771C67.3618 22.5714 61.348 22.0365 55.459 22.9165C49.5701 23.7965 43.9754 26.0662 39.1378 29.5377C34.3002 33.0092 30.3588 37.5827 27.6398 42.8799C24.9207 48.1771 23.5021 54.0457 23.5013 60ZM61.0013 97.4999C52.3928 97.5129 44.0441 94.5514 37.368 89.1166C40.0552 85.2697 43.6319 82.1288 47.7938 79.9611C51.9557 77.7935 56.5796 76.6633 61.2721 76.6666C65.9061 76.6629 70.4742 77.7648 74.5968 79.8809C78.7195 81.9969 82.2778 85.066 84.9763 88.8333C78.2484 94.4445 69.7621 97.5122 61.0013 97.4999Z" fill="white"/>
+            </svg>     
+          </div>
+
+          {/* Collapsible Mobile Menu */}
+          {isMobileMenuOpen && (
+            <div className="md:hidden w-full">
+              <ul className="flex flex-col p-4 mt-4 font-medium borderrounded-lg">
+                {NavList.map((item, index) => (
+                  <li key={index}>
+                    <Link
+                      to={item.link}
+                      className="block py-2 pl-3 pr-4 text-green"
+                      onClick={toggleMobileMenu}
+                    >
+                      {item.list}
+                    </Link>
+                  </li>
+                ))}
               </ul>
             </div>
-          </div>
-        </nav>
+          )}
+        </div>
+      </nav>
     </>
   );
 };
-export default Navbar
+
+export default Navbar;

@@ -12,7 +12,7 @@ function Features (){
                         <h1 className="text-h3 font-bold">Our Features</h1>
                         <p className="text-xs">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus repellat officiis blanditiis</p>
                     </div>
-                    <div className="grid md:grid-cols-3 gap-4 justify-items-center grid-cols-1">
+                    <div className="grid md:grid-cols-3 gap-4 justify-items-center grid-cols-1 pb-10">
                         <div className="bg-white py-3 max-w-[300px] md:h-[400px] h-fit flex flex-col justify-center items-center text-center shadow-md transition duration-300 ease-in-out transform hover:translate-y-[-5%]">
                             <svg width="72" height="70" viewBox="0 0 122 120" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <ellipse cx="60.6818" cy="60" rx="60.6818" ry="60" fill="#348452"/>
