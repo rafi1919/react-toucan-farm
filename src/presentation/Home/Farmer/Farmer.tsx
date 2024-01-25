@@ -19,8 +19,8 @@ function Farmer(){
             <div className='w-full md:h-[60vh] h-[100%] mt-20 bg-white'>
             <div className='mx-auto max-w-[960px] px-6 md:px-3'>
                     <div className="text-center mx-auto md:max-w-[400px]">
-                        <h1 className="text-h3">Toucan Farmer</h1>
-                        <p >Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus repellat officiis blanditiis reprehenderit fugiat beatae dolorum sit illum.</p>
+                        <h1 className="text-h3 font-bold">Toucan Farmer</h1>
+                        <p className="text-xs">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus repellat officiis blanditiis reprehenderit fugiat beatae dolorum sit illum.</p>
                     </div>
                     <div className="grid grid-cols-2 md:grid-cols-4 justify-center md:gap-5 gap-1 my-5 ">
                         {imageGallery.map((item, index)=>(

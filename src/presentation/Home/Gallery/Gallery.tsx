@@ -47,8 +47,8 @@ function Gallery(){
             <div className='w-full md:h-[100vh] h-[100%] bg-white'>
                 <div className='p-6 md:px-3'>
                     <div className="text-center mx-auto max-w-[400px] ">
-                        <h1 className="text-h3">Gallery</h1>
-                        <p >Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus repellat officiis blanditiis reprehenderit fugiat beatae dolorum sit illum.</p>
+                        <h1 className="text-h3 font-bold">Toucan Gallery</h1>
+                        <p className="text-xs">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus repellat officiis blanditiis reprehenderit fugiat beatae dolorum sit illum.</p>
                     </div>
                 <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-4 gap-4 mt-6">
                         {imageGallery.map((item, index)=>(

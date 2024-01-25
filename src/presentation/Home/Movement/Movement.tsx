@@ -6,11 +6,11 @@ interface image {
 
 const imageGallery: image[] =[
     {name: 'Movement',
-     number:'62+', },    
+     number:'100+', },    
     {name: 'cow',
-    number:'62+', },
+    number:'30+', },
     {name: 'carrot',
-    number:'62+', },    
+    number:'50+', },    
     {name: 'truck',
     number:'62+', },    
 

@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 import { Link } from 'react-router-dom';
 
 interface Page {
@@ -9,15 +9,15 @@ interface Page {
 const NavList: Page[] = [
   {
     list: 'User',
-    link: '/user',
+    link: '#',
   },
   {
     list: 'Shop',
-    link: '/shop',
+    link: '#',
   },
   {
     list: 'Community',
-    link: '/community',
+    link: '#',
   },
 ];
 
