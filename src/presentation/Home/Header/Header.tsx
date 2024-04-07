@@ -20,7 +20,7 @@ function Header() {
                   } } />
               </div>
               <div className='-mb-[20px]'>
-                <img src='/public/image/header.png' />
+                <img src='/image/header.png' />
               </div>
           </div>
           
