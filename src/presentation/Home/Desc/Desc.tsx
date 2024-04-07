@@ -13,9 +13,9 @@ function Description (){
                             </div>
                         </div>
                         <div className="">      
-                            <h1 className="text-h1 font-Playpen-Sans">Welcome to Toucan Organic</h1>
-                            <h3 className="text-h5 font-thin tracking-widest py-5">WITH LOVE AND DEDICATION</h3>
-                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quisquam, ducimus natus iste, sit maxime fugit, hic labore error at officiis nemo asperiores odio culpa. Vel aspernatur amet minus minima necessitatibus.</p>
+                            <h1 className="text-h3 font-bold">Welcome to Toucan Organic</h1>
+                            <h3 className="text-h5 font-thin tracking-widest py-3">WITH LOVE AND DEDICATION</h3>
+                            <p className="font-thin">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quisquam, ducimus natus iste, sit maxime fugit, hic labore error at officiis nemo asperiores odio culpa. Vel aspernatur amet minus minima necessitatibus.</p>
                             <Button
                             className="mt-4"
                              text='login' 

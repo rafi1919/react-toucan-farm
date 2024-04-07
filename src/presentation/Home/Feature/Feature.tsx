@@ -10,7 +10,7 @@ function Features (){
                 <div className='mx-auto max-w-[960px]'>
                     <div className="text-center mx-auto w-[300px] py-14">
                         <h1 className="text-h3 font-bold">Our Features</h1>
-                        <p className="text-xs">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus repellat officiis blanditiis</p>
+                        <p className="text-xs font-thin">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus repellat officiis blanditiis</p>
                     </div>
                     <div className="grid md:grid-cols-3 gap-4 justify-items-center grid-cols-1 pb-10">
                         <div className="bg-white py-3 max-w-[300px] md:h-[400px] h-fit flex flex-col justify-center items-center text-center shadow-md transition duration-300 ease-in-out transform hover:translate-y-[-5%]">
@@ -20,7 +20,7 @@ function Features (){
                             </svg>
 
                             <h6 className="text-h5">bang</h6>
-                            <p className="text-sm ">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus repellat </p>
+                            <p className="text-sm font-thin">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus repellat </p>
                             <a href="#" className="mt-5">Read more</a>
                         </div>
                         <div className="bg-white py-3 max-w-[300px] md:h-[400px] h-fit flex flex-col justify-center items-center text-center shadow-md transition duration-300 ease-in-out transform hover:translate-y-[-5%]">
@@ -37,7 +37,7 @@ function Features (){
                             </svg>
 
                             <h6 className="text-h5">bang</h6>
-                            <p className="text-sm ">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus repellat </p>
+                            <p className="text-sm font-thin">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus repellat </p>
                             <a href="#" className="mt-5">Read more</a>
                         </div>
                         <div className="bg-white py-3 max-w-[300px] md:h-[400px] h-fit flex flex-col justify-center items-center text-center shadow-md transition duration-300 ease-in-out transform hover:translate-y-[-5%]">
@@ -47,7 +47,7 @@ function Features (){
                             </svg>
 
                             <h6 className="text-h5">bang</h6>
-                            <p className="text-sm ">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus repellat </p>
+                            <p className="text-sm font-thin">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus repellat </p>
                             <a href="#" className="mt-5">Read more</a>
                         </div>
                         

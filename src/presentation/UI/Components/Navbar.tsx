@@ -30,7 +30,7 @@ const Navbar = () => {
 
   return (
     <>
-      <nav className="w-full fixed border-gray-200 bg-pink z-10">
+      <nav className="w-full fixed  bg-white z-10">
         <div className="flex max-w-[960px] flex-wrap items-center justify-between mx-auto p-4">
           <a href="https://flowbite.com/" className="flex items-center">
              <svg className='w-10 h-10' viewBox="0 0 66 56" fill="none" xmlns="http://www.w3.org/2000/svg">

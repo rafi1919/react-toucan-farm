@@ -9,9 +9,9 @@ const imageGallery: image[] =[
     {image: 'https://images.pexels.com/photos/255469/pexels-photo-255469.jpeg?auto=compress&cs=tinysrgb&w=600' ,
     text:'How to make great crops from only 60 days of watering adn sunlight'},    
     {image: 'https://images.pexels.com/photos/2252584/pexels-photo-2252584.jpeg?auto=compress&cs=tinysrgb&w=600',
-    text:'I eat ass' },
+    text:'How to make great crops from only 60 days of watering adn sunlight' },
     {image: 'https://images.pexels.com/photos/2255924/pexels-photo-2255924.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
-    text:'the amount of shit that came from the cattle makes as good shot for the vegetables' },    
+    text:'How to make great crops from only 60 days of watering adn sunlight' },    
 ]
 
 interface footer {
@@ -36,7 +36,7 @@ function Blog(){
                     </div>
                     <div className="md:flex grid justify-center gap-5 my-5 ">
                         {imageGallery.map((item, index)=>(
-                            <div key={index} className="md:max-w-[200px] min-w-[200px] h-[300px]  bg-slate-100">
+                            <div key={index} className="md:max-w-[200px] min-w-[200px] h-[300px]">
                             <img src={item.image} className="object-cover md:max-w-[200px] md:max-h-[200px] w-full h-full transition duration-300 ease-in-out transform hover:bg-green hover:bg-opacity-30" />
                                 <p className="text-[11px] p-4">
                                     {item.text}
@@ -53,12 +53,16 @@ function Blog(){
                 <div className="py-10">
 
                 <div className='text-center mx-auto max-w-[960px]'>
-                    <div className="flex justify-center gap-5 mt-14 ">
-                        {footerContent.map((item, index)=>(
-                            <div key={index} className=" w-[200px] h-[200px] text-white">
-                                    <p>{item.text}</p>
-                            </div>
-                        ))}
+                    <div className="mt-14 justify-center items-center text-white">
+                        <p>@portofolio rafi 2024</p>
+                        <div className="flex justify-center gap-5 ">
+
+                            {footerContent.map((item, index)=>(
+                                <div key={index} className=" w-[200px] h-[200px] ">
+                                        <p>{item.text}</p>
+                                </div>
+                            ))}
+                        </div>
                     </div>
                 </div>             
                 </div>

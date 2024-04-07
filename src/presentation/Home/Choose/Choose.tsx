@@ -32,7 +32,7 @@ function Choose(){
                                 <path d="M52.832 80L33.832 61L38.582 56.25L52.832 70.5L83.4154 39.9166L88.1654 44.6666L52.832 80Z" fill="white"/>
                                 </svg>
                             <div className="ml-4">
-                                <h4 className="text-h4 font-thin ">{item.title}</h4>
+                                <h4 className="text-h4 font-thin">{item.title}</h4>
                                 <p>{item.description}</p>
                             </div>
                             </div>
